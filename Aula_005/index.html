@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, tips, course">
+    <meta name="description" content="Learning to work whith HTML5">
+    <meta name="author" content="Edivaldo Junior">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica e definição de cabeçalho</title>
+    
+    <script>
+        document.createElement('myTag')
+    </script>
+    
+    <style>
+        header, section, footer, nav, main, article, figure{
+            display: block;
+        }
+
+        myTag{
+            display: block;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Título Principal</h1>
+        <h2>Título Secundário</h2>
+        
+        <nav> <!-- Menu -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <myTag>
+        Essa é a minha tag!
+    </myTag>
+</body>
+</html>
