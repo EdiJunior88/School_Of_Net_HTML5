@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibilidade</title>
+    <script>
+        document.createElement('myTag')
+    </script>
+    
+    <style>
+        header, section, footer, nav, main, article, figure{
+            display: block;
+        }
+        
+        myTag{
+            display: block;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <myTag>
+        Essa é a minha tag!
+    </myTag>
+</body>
+</html>
