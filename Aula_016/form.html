@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Input Types</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Input Types</h1>
+    </header>
+    
+    <section>
+        <form>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="color">
+            </div>
+    
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+    
+            <div class="form-group">
+                <label>DateTime-Local</label>
+                <input type="datetime-local">
+            </div>
+    
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email">
+            </div>
+    
+            <div class="form-group">
+                <label>Month</label>
+                <input type="month">
+            </div>
+    
+            <div class="form-group">
+                <label>Number</label>
+                <input type="number" min="0" max="100" step="10">
+            </div>
+    
+            <div class="form-group">
+                <label>Range</label>
+                <input type="text" id="textinput">
+                <input type="range" min="0" max="10" step="2" onchange="updateTextInput(this.value)">
+                <script>
+                    function updateTextInput(num){
+                        document.getElementById('textinput').value = num
+                    }
+                </script>
+            </div>
+    
+            <div class="form-group">
+                <label>Search</label>
+                <input type="search">
+            </div>
+    
+            <div class="form-group">
+                <label>Time</label>
+                <input type="time">
+            </div>
+    
+            <div class="form-group">
+                <label>URL</label>
+                <input type="url">
+            </div>
+    
+            <div class="form-group">
+                <label>Week</label>
+                <input type="week">
+            </div>
+    
+            <div class="form-group">
+                <label>List</label>
+                <input list="códigos" name="códigos" x-moz-errormessage="Customize a parte do erro" title="Customize a parte do erro" required>
+                <datalist id="códigos">
+                    <option value="JavaScript"></option>
+                    <option value="PHP"></option>
+                    <option value="Java"></option>
+                    <option value="Ruby"></option>
+                    <option value="Python"></option>
+                </datalist>
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Output</h1>
+        <form oninput="x.value=parseInt(a.value) + parseInt(b.value), y.value=parseInt(a.value)">
+            0
+            <input type="range" id="a" name="a" value="50" min="0" max="100">
+            100
+            +
+            <input type="text" name="b" value="0">
+            =
+            <output name="x"></output>
+            <output name="y"></output>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Autocomplete</h1> <!-- Salva o histórico no navegador -->
+        <form>
+            <div class="form-group">
+                <input type="text" name="fname" placeholder="Nome">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="lname" placeholder="Sobrenome">
+            </div>
+    
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail" autocomplete="off"> <!-- Não salva o histórico no navegador -->
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Novalidate e Autofocus</h1>
+        <form novalidate> <!-- Não faz a validação -->
+            <div class="form-group">
+                <input type="text" name="fname" placeholder="Nome" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="lname" placeholder="Sobrenome" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail" autocomplete="off" autofocus>  <!-- Estipula o foco automático na página -->
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>
