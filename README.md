@@ -7,5 +7,9 @@ além de proporcionar uma visualização mais limpa mantem o código organizado 
 
 <hr/>
 
+<strong>Página do Projeto: </strong> <a href="https://edijunior88.github.io/School_Of_Net_HTML5/">https://edijunior88.github.io/School_Of_Net_HTML5/</a>
+
+<hr/>
+
 <h4><b>Aulas:</b> :vhs: 18 Video-aulas</h4>
 <h4><b>Status do Curso:</b> :white_check_mark: Concluído
